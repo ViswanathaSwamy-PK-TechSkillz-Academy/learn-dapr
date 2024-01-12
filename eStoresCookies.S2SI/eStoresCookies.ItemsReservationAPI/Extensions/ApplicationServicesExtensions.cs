@@ -6,11 +6,12 @@ public static class ApplicationServicesExtensions
 {
     public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
     {
-        _ = services.AddLogging(logging =>
+        _ = services.AddTransient<ILogger>(p =>
         {
-            logging.ClearProviders();
-            logging.AddConsole();
-            logging.AddDebug();
+            var loggerFactory = p.GetRequiredService<ILoggerFactory>();
+
+
+            return loggerFactory.CreateLogger("eStoresCookies.ItemsReservationAPI");
         });
 
         _ = services.AddControllers().AddDapr(opt => opt.UseJsonSerializationOptions(new()

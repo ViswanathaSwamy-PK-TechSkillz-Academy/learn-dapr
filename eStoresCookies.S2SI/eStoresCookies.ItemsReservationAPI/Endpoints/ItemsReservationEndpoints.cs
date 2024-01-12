@@ -1,7 +1,6 @@
 ﻿using Dapr.Client;
 using eStoresCookies.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
-using static eStoresCookies.Core.Common.Constants;
 
 namespace eStoresCookies.ItemsReservationAPI.Endpoints;
 
