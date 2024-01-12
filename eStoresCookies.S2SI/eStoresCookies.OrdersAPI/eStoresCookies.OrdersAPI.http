@@ -1,0 +1,6 @@
+@eStoresCookies.OrdersAPI_HostAddress = http://localhost:5116
+
+GET {{eStoresCookies.OrdersAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
