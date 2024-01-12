@@ -1,4 +1,6 @@
-﻿namespace eStoresCookies.ItemsReservationAPI.Extensions;
+﻿using eStoresCookies.ItemsReservationAPI.Endpoints;
+
+namespace eStoresCookies.ItemsReservationAPI.Extensions;
 
 public static class HttpRequestPipelineExtensions
 {
@@ -14,7 +16,7 @@ public static class HttpRequestPipelineExtensions
 
         app.UseAuthorization();
 
-        app.MapControllers();
+        app.MapWelcomeEndpoints();
 
         return app;
     }
