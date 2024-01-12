@@ -18,6 +18,8 @@ public static class HttpRequestPipelineExtensions
 
         app.MapWelcomeEndpoints();
 
+        app.MapItemsReservationEndpoints();
+
         return app;
     }
 }
