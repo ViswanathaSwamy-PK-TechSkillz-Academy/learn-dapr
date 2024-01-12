@@ -6,6 +6,13 @@ public static class ApplicationServicesExtensions
 {
     public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
     {
+        _ = services.AddLogging(logging =>
+        {
+            logging.ClearProviders();
+            logging.AddConsole();
+            logging.AddDebug();
+        });
+
         _ = services.AddControllers().AddDapr(opt => opt.UseJsonSerializationOptions(new()
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
