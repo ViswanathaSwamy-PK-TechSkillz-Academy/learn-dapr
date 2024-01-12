@@ -1,17 +1,9 @@
-using System.Text.Json;
+using eStoresCookies.OrdersAPI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers().AddDapr(opt => opt.UseJsonSerializationOptions(new()
-{
-    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-    PropertyNameCaseInsensitive = true,
-}));
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.ConfigureApplicationServices();
 
 var app = builder.Build();
 

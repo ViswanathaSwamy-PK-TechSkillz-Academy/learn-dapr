@@ -12,8 +12,10 @@ public class OrdersController(ILogger<OrdersController> logger) : ControllerBase
     private readonly ILogger<OrdersController> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
     [HttpPost("order")]
-    public async Task<ActionResult<Guid>> SubmitOrder(Order order, [FromServices] DaprClient daprClient)
+    public async Task<ActionResult<Guid>> SubmitOrder([FromBody]Order order, [FromServices] DaprClient daprClient)
     {
+        ArgumentNullException.ThrowIfNull(daprClient);
+
         _logger.LogInformation("Starting OrderController::SubmitOrder().");
 
         order.Id = Guid.NewGuid();
