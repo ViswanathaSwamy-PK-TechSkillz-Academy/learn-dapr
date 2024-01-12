@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoresCookies.Core", "eSto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoresCookies.Data", "eStoresCookies.Data\eStoresCookies.Data.csproj", "{70BB4437-B53F-46D1-988A-54DF1A85E5FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoresCookies.OrdersAPI", "eStoresCookies.OrdersAPI\eStoresCookies.OrdersAPI.csproj", "{CAF10FA5-2F30-47C1-AE6B-078368929DDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{70BB4437-B53F-46D1-988A-54DF1A85E5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70BB4437-B53F-46D1-988A-54DF1A85E5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70BB4437-B53F-46D1-988A-54DF1A85E5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF10FA5-2F30-47C1-AE6B-078368929DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF10FA5-2F30-47C1-AE6B-078368929DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF10FA5-2F30-47C1-AE6B-078368929DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF10FA5-2F30-47C1-AE6B-078368929DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
