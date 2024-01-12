@@ -11,7 +11,7 @@ public static class ItemsReservationEndpoints
     {
         _ = routes.MapPost("/reserve", ([FromServices] DaprClient client, [FromBody] Item item, [FromServices] ILogger logger) =>
         {
-            logger.LogInformation("Enter Reservation");
+            logger.LogInformation($"Received the Item Reservation for {item.SKU}");
 
             Item storedItem = new()
             {
