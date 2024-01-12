@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoresCookies.OrdersAPI", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoresCookies.ItemsReservationAPI", "eStoresCookies.ItemsReservationAPI\eStoresCookies.ItemsReservationAPI.csproj", "{D5EADDA2-1FCF-4E06-BA1B-62B10C16FE2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{135D60DA-1211-499B-A905-57797B67EF27}"
+	ProjectSection(SolutionItems) = preProject
+		components\resiliency.yaml = components\resiliency.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
