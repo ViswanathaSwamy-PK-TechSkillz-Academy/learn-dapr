@@ -24,7 +24,7 @@ public class OrdersController(ILogger<OrdersController> logger) : ControllerBase
         {
             var data = new { sku = item.ProductCode, quantity = item.Quantity };
 
-            var result = await daprClient.InvokeMethodAsync<object, dynamic>(HttpMethod.Post, "reservation-service", "reserve", data);
+            var result = await daprClient.InvokeMethodAsync<object, dynamic>(HttpMethod.Post, "itemsreservation-service", "reserve", data);
 
             _logger.LogInformation($"sku: {result.GetProperty("sku")} === new quantity: {result.GetProperty("quantity")}");
         }
