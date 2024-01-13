@@ -13,7 +13,7 @@ content-type: application/json
 
 ### Invoke the Items Reservation service using Dapr Sidecar 
 
-POST {{eStoresCookies.ItemsReservationAPI_DaprAddress}}/reserve HTTP/1.1
+POST {{eStoresCookies.ItemsReservationAPI_DaprAddress}}/v1.0/invoke/itemsreservation-service/method/reserve HTTP/1.1
 content-type: application/json
 
 {
