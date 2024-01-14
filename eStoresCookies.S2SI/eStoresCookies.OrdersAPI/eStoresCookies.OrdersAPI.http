@@ -1,7 +1,7 @@
 @eStoresCookies.OrdersAPI_HostAddress = http://localhost:5001
 @eStoresCookies.OrdersAPI_DaprAddress = http://localhost:5010
 
-### Direct call to the order service
+### Direct call to the Orders service
 
 POST {{eStoresCookies.OrdersAPI_HostAddress}}/api/orders/order HTTP/1.1
 content-type: application/json
@@ -19,7 +19,7 @@ content-type: application/json
   ]
 }
 
-###
+### Invoke the Orders service using Dapr Sidecar
 
 POST {{eStoresCookies.OrdersAPI_DaprAddress}}/v1.0/invoke/orders-service/method/api/orders/order HTTP/1.1
 content-type: application/json

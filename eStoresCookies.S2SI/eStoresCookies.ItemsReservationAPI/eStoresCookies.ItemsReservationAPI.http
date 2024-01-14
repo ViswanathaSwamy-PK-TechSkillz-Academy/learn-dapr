@@ -1,6 +1,24 @@
-@eStoresCookies.ItemsReservationAPI_HostAddress = http://localhost:5175
+@eStoresCookies.ItemsReservationAPI_HostAddress = http://localhost:5002
+@eStoresCookies.ItemsReservationAPI_DaprAddress = http://localhost:5020
 
-GET {{eStoresCookies.ItemsReservationAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+### Direct call to the Items Reservation service
+
+POST {{eStoresCookies.ItemsReservationAPI_HostAddress}}/reserve HTTP/1.1
+content-type: application/json
+
+{
+    "ProductCode": "Choco Cookie",
+    "Quantity": 83
+}
+
+### Invoke the Items Reservation service using Dapr Sidecar 
+
+POST {{eStoresCookies.ItemsReservationAPI_DaprAddress}}/v1.0/invoke/itemsreservation-service/method/reserve HTTP/1.1
+content-type: application/json
+
+{
+    "ProductCode": "Choco Cookie",
+    "Quantity": 83
+}
 
 ###
