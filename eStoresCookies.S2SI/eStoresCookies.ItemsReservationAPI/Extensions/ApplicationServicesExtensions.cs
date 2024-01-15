@@ -10,7 +10,6 @@ public static class ApplicationServicesExtensions
         {
             var loggerFactory = p.GetRequiredService<ILoggerFactory>();
 
-
             return loggerFactory.CreateLogger("eStoresCookies.ItemsReservationAPI");
         });
 
