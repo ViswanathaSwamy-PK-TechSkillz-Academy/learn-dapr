@@ -1,0 +1,34 @@
+# These are supported funding model platforms
+
+# Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [user1, user2]
+github: [USERNAME, USERNAME, USERNAME, USERNAME]
+
+# Replace with a single Patreon username
+patreon: USERNAME
+
+# Replace with a single Open Collective username
+open_collective: USERNAME
+
+# Replace with a single Ko-fi username
+ko_fi: USERNAME
+
+# Replace with a single Tidelift platform-name/package-name e.g., npm/babel
+tidelift: PLATFORM-NAME/PACKAGE-NAME
+
+# Replace with a single Community Bridge project-name e.g., cloud-foundry
+community_bridge: dapr-with-dotnet-8
+
+# Replace with a single Liberapay username
+liberapay: USERNAME
+
+# Replace with a single IssueHunt username
+issuehunt: USERNAME
+
+# Replace with a single Otechie username
+otechie: USERNAME
+
+# Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
+lfx_crowdfunding: PROJECT-NAME
+
+# Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
+custom: ['link1', 'link2']
